@@ -1,2 +1,2 @@
 # Logica de Programacao
- Exercícios do curso de lógica de programação.
+ Resolução dos exercícios do curso de lógica de programação.
