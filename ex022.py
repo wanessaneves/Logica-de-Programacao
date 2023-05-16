@@ -1,5 +1,11 @@
-frase = input('Digite uma frase: ').upper().strip()
-print('A letra A aparece {} vezes na frase'.format(frase.count('A')))
-print('A primeira letra A apareceu na {} posição'.format(frase.find('A') + 1))
-print('A última letra A apareceu na {} posição'.format(frase.rfind('A') + 1))
-
+from random import randint
+computador = randint(0,10)
+print('SOU SEU COMPUTADOR, ACABEI DE PENSAR EM UM NÚMERO ENTRE 0 E 10')
+acertou = False
+tentativas = 0
+while not acertou:
+    jogador = int(input('Qual é seu palpite?'))
+    tentativas += 1
+    if jogador == acertou:
+        acertou = True
+print('Você ACERTOU com {} tentativas!'.format(tentativas))

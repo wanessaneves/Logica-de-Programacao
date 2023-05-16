@@ -1,5 +1,8 @@
-salario = float(input('Qual o seu salário? '))
-if salario <= 1250:
-    print('Com o reajuste salarial de 15% seu novo salário é de R$ {:.2f}'.format((15/100*salario) + salario))
-else:
-    print('Com o reajuste salarial de 10% seu novo salário é de R$ {:.2f}'.format((10/100*salario) + salario))
+while True:
+    n = int(input('Digite um valor para verificar a tabuada: '))
+    if n < 0:
+        break
+    for c in range (1,11):
+        t = n * c
+        print(f'{n} X {c} = {t}')
+print('O valor digitado foi negativo! Tabuada encerrada!!')

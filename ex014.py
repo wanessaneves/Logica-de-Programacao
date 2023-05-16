@@ -1,6 +1,5 @@
-import math
-co = float(input('Digite o comprimento do cateto oposto: '))
-ca = float(input('Digite o comprimento do cateto adjascente: '))
-hp = math.hypot(co,ca)
-print('O comprimento da hipotenusa é {:.2f}'.format(hp))
-
+s = 0
+for n in range(1,501,2):
+    if n%3 == 0:
+        s = s + n
+print(s)

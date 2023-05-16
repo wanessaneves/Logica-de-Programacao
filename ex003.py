@@ -1,21 +1,14 @@
-# Ordem de precedencia para cálculo:
-# parenteses ()
-# potencia **; divisão /, multiplicação *, resto da divisão % e divisão inteira //
-# soma + e subtração.
-
-n1 = int(input('Digite um valor:'))
-n2 = int(input('Digite outro valor: '))
-s = n1 + n2
-m = n1 * n2
-d = n1 / n2
-di = n1 // n2
-e = n1 ** n2
-print('A soma é {}, o produto é {}, a divisão é {:.2f}, a divisão inteira é {}, e a exponenciação é {}'.format(s,m,d,di,e))
-
-
-
-
-
-
-
-
+num = int(input('Digite um número inteiro: '))
+print('''Escolha uma das bases para conversão: 
+[1] Converter para binário
+[2] Converter para hexadecimal 
+[3] Converter para octal''')
+opcao = int(input('Sua opção é? '))
+if opcao == 1:
+    print('{} convertido para binário é igual a {}'.format(num, bin(num)[2:]))
+elif opcao == 2:
+    print('{} convertido para hexadecimal é {}'.format(num, hex(num)[2:]))
+elif opcao == 3:
+    print('{} convertido para octal é igual a {}'.format(num, oct(num)[2:]))
+else:
+    print('Opção inválida, tente novamente!')

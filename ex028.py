@@ -1,5 +1,8 @@
-d = float(input('Qual será a distancia percorrida em km?'))
-if d <= 200:
-    print('O valor da sua viagem irá custar R${}'.format(d*0.50))
-else:
-    print('O valor da sua viagem vai custar R${}'.format(d*0.45))
+n = q = s = 0
+n = (int(input('Digite um valor: ')))
+while n != 999:
+    s += n
+    q += 1
+    n = (int(input('Digite um valor: ')))
+print('A quantidade digitada foi de {} valores, e a soma dos mesmos foi de {}'.format(q,s))
+

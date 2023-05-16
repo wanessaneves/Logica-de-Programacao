@@ -1,8 +1,17 @@
-from datetime import date
-ano = int(input('Qual o ano você quer analisar? Coloque 0 para analisar o ano atual!'))
-if ano == 0:
-    ano = date.today().year
-if ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0:
-    print('O ano {} é bissexto'.format(ano))
-else:
-    print('O ano {} não é bissexto'.format(ano))
+resp = 'S'
+media = quant = soma = maior = menor = 0
+while resp in 'Ss':
+    num = int(input('Digite um número: '))
+    soma += num
+    quant += 1
+    if quant == 1:
+        maior = menor = num
+    else:
+        if num > maior:
+            maior = num
+        if num < menor:
+            menor = num
+    resp = str(input('Quer continuar? [S/N]')).upper().strip()[0]
+media = soma/quant
+print('Você digitou {} números e a média entre eles é de {} '.format(quant,media))
+print('O maior valor foi {} e o menor foi {}'.format(maior,menor))
