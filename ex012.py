@@ -1,8 +1,7 @@
-from time import sleep
-print('-=-'*12)
-print('       CONTAGEM REGRESSIVA:      ')
-print('-=-'*12)
+s = float(input('Digite o seu salário mensal para saber o novo valor a partir do reajuste de 15%: R$'))
+r = s * (15/100)
+ns = s + r
+print('O seu novo salário é de R$ {:.2f}'.format(ns))
 
-for c in range(10, 0, -1):
-    print(c)
-    sleep(1)
+
+

@@ -1,15 +1,5 @@
-maior = 0
-menor = 0
-for c in range(5):
-    peso = float(input('Qual o seu peso? '))
-    if c == 1:
-        maior = peso
-        menor = peso
-    else:
-        if peso > maior:
-            maior = peso
-        if peso < menor:
-            menor = peso
+cidade = input('Digite a sua cidade natal: ').strip()
 
+cidade1 = cidade.split()
+print('Sua cidade começa com o nome Santo? {}'.format(cidade1[0].upper() == 'SANTO'))
 
-print(maior, menor)

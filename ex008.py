@@ -1,13 +1,13 @@
-l1 = float(input('Digite o primeiro lado do triângulo: '))
-l2 = float(input('Digite o segundo lado do triângulo: '))
-l3 = float(input('Digite o terceiro lado do triângulo: '))
-if l1 < l2 + l3 and l2 < l1 + l3 and l3 < l1 + l2:
-    if l1 != l2 and l2 != l3 and l1 != l3:
-        print('É um triângulo escaleno pois possui ambos os lados diferentes!')
-    elif l1 == l2 and l1 == l3:
-        print('É um triângulo equilátero, todos os lados são iguais!')
-    elif l1 == l2 or l2 == l3 or l1 == l3:
-        print('É um triângulo isósceles, possui dois lados iguais!')
-else:
-    print('Os valor digitados não correspondem a um triângulo!')
+v = int(input('Digite um valor: '))
+t = v * 1
+t2 = v * 2
+t3 = v * 3
+t4 = v * 4
+t5 = v * 5
+t6 = v * 6
+t7 = v * 7
+t8 = v * 8
+t9 = v * 9
+t10 = v * 10
 
+print('A tabuada do valor {} é \n {} \n {} \n {} \n {} \n {} \n {} \n {} \n {} \n {} \n {}'.format(v, t, t2, t3, t4, t5, t6, t7, t8,t9, t10))

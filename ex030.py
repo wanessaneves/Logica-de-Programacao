@@ -1,9 +1,17 @@
-s = q = n = 0
+n1 = int(input('Digite o primeiro valor:'))
+n2 = int(input('Digite o segundo valor: '))
+n3 = int(input('Digite o terceiro valor: '))
 
-while True:
-    n = int(input('Digite um valor: '))
-    if n == 999:
-        break
-    s += n
-    q += 1
-print(f'A quantidade digitada foi de {q} e a soma dos números resultou em {s}')
+if n1 > n2 and n1 > n3:
+    print('O maior valor é {}'.format(n1))
+elif n2 > n3:
+    print('O maior valor é {}'.format(n2))
+else:
+    print('O maior valor é {}'.format(n3))
+
+if n1 < n2 and n1 < n3:
+    print('O menor valor é {}'.format(n1))
+elif n2 < n3:
+    print('O menor valor é {}'.format(n2))
+else:
+    print('O menor valor é {}'.format(n3))

@@ -1,5 +1,9 @@
-num = int(input('Digite um valor inteiro: '))
-if num % 2 !=0:
-    print('O número {} é primo, pois é divisível por 1 e por ele mesmo!'.format(num))
-else:
-    print('O valor {} não é primo!'.format(num))
+nome = input('Digite o seu nome completo').strip()
+print(nome.upper())
+print(nome.lower())
+print(len(nome) - nome.count(' '))
+nome2 = (nome.split())
+print(nome2[0])
+
+
+
